@@ -1,0 +1,7 @@
+p {
+  color: pink; }
+
+.div {
+  background-color: teal; }
+  .div p {
+    color: yellow; }
