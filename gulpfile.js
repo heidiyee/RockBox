@@ -18,14 +18,14 @@ function onError(err) {
 
 //sass to css
 gulp.task('sass', function() {
-return gulp.src('_ui/scss/main.scss')
+return gulp.src('_ui/scss/**/*.scss')
     .pipe(plumber({errorHandler: onError}))
     .pipe(sass())
     .pipe(autoprefixer({
-        browsers: ['last 2 versions'],
+        browsers: browsers: ['last 2 version', 'safari 5', 'ie6', 'ie7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'],
         cascade: false
     }))
-    .pipe(gulp.dest('_ui/css/main.css'))
+    .pipe(gulp.dest('_ui/css/'))
     .pipe(browserSync.reload({
         stream:true
     }))

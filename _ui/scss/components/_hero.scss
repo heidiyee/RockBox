@@ -1,0 +1,92 @@
+.hero {
+    position: relative;
+    height: calc(100vh - 66px);
+    background-color: #000;
+    background-image:
+        url(../assets/hero-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    .singer img {
+        position: absolute;
+
+        float: left;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 95%;
+        margin: 0 2.5%;
+    }
+
+    .singer img:nth-child(2) {
+        display: none;
+    }
+
+    h2 {
+        position: absolute;
+        text-align: center;
+        width: auto;
+        top: 5%;
+        left: 0;
+        margin: 0 calc((100vw - 250px)/2);
+        font-size: 4em;
+
+
+        #blue {
+            color: #52C6D8;
+        }
+    }
+
+    p {
+        position: absolute;
+        font-size: 1.8em;
+        //text-align: justify;
+        top: 30%;
+        left: 0;
+        width: 60%;
+        margin: 0 20%;
+    }
+
+    a {
+        position: absolute;
+        top: 70%;
+        left: 0;
+        width: auto;
+        margin: 0 calc((100vw - 114px)/2)
+    }
+
+}
+
+@media only screen
+and (min-device-width: $iphone6-width)
+and (max-device-width: $iphone6plus-width) and (orientation : portrait) {
+    .hero {
+        h2 {
+            font-size: 4.8em;
+            margin: 0 calc((100vw - 300px)/2);
+        }
+
+        p {
+            font-size: 2.0em;
+        }
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .hero {
+        h2 {
+            font-size: 7.8em;
+            margin: 0 calc((100vw - 500px)/2);
+        }
+
+        p {
+            top: 35%;
+            font-size: 3.2em;
+        }
+
+        a {
+            margin: 0 calc((100vw - 200px)/2)
+        }
+    }
+}

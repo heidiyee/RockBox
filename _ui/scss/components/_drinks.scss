@@ -1,0 +1,65 @@
+.drinks {
+    //height: 100vh;
+    background: url(../assets/drinks-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -300px center;
+    padding-bottom: 6em;
+
+    h2 {
+        width: 70%;
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+    }
+
+    p {
+        width: 50%;
+        padding-bottom: 2em;
+    }
+
+}
+
+@media only screen
+and (min-width : $iphone5-width)
+and (max-height : $iphone5-height) and (orientation: portrait) {
+    .drinks {
+        background-position: -380px center;
+
+        h2  {
+            width: 80%;
+        }
+
+        p {
+            width: 60%;
+        }
+    }
+}
+
+@media only screen
+and (min-width : $iphone6-width)
+and (max-height : $iphone6-height) and (orientation: portrait) {
+    .drinks {
+        background-position: -320px center;
+    }
+}
+
+@media only screen and (min-width: 469px) {
+    .drinks {
+        background-position: right center;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .drinks {
+
+        h2 {
+            width: 60%;
+            font-size: 4.8em;
+        }
+
+        p {
+            font-size: 2.4em;
+        }
+
+    }
+}

@@ -1,0 +1,27 @@
+.event {
+    background: url(../assets/star.svg);
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: 90px auto;
+    background-position: right -1em top 4.5em;
+    text-align: center;
+    padding-bottom: 6em;
+
+    h2 {
+        padding-top: 1em;
+    }
+
+    p {
+        font-size: 1.8em;
+        padding: 1.5em 2em 0 2em;
+    }
+
+    p:nth-child(3) {
+        color: $yellow;
+        padding-bottom: 1.5em;
+    }
+
+    a {
+        padding-top: 1em;
+    }
+}

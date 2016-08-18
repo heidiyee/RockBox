@@ -1,0 +1,320 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
+html {
+  box-sizing: border-box; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-size: 62.5%; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none;
+  color: #fff;
+  padding-bottom: 0.5em;
+  border-bottom: 5px solid #fff;
+  font-size: 1.8em; }
+
+@media only screen and (min-width: 700px) {
+  a {
+    font-size: 2.4em; } }
+
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/Arial.ttf") format("truetype"); }
+
+body {
+  font-family: "Arial", sans-serif; }
+
+h2, a {
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 3.0em; }
+
+h3 {
+  font-size: 1.4em;
+  padding-bottom: 0.5em;
+  border-bottom: 5px solid #EB008B; }
+
+p {
+  font-size: 1.8em; }
+
+table {
+  font-size: 1.8em; }
+
+body nav, body footer {
+  padding: 0 2em;
+  color: #fff; }
+
+body section {
+  color: #fff;
+  padding-left: 2em;
+  padding-right: 2em; }
+
+nav {
+  position: relative;
+  height: 66px;
+  display: block;
+  background-color: #000; }
+  nav img {
+    position: absolute;
+    float: left;
+    width: 150px;
+    height: auto;
+    top: 21.75px; }
+
+#nav-icon {
+  display: inline-block;
+  float: right;
+  width: 20px;
+  height: 53px;
+  cursor: pointer;
+  transition: margin-right .5s;
+  transform: rotate(0deg); }
+  #nav-icon span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out; }
+  #nav-icon span:nth-child(1) {
+    top: 26px; }
+  #nav-icon span:nth-child(2), #nav-icon span:nth-child(3) {
+    top: 32px; }
+  #nav-icon span:nth-child(4) {
+    top: 38px; }
+
+#nav-icon.open span:nth-child(1) {
+  top: 32px;
+  width: 0%;
+  left: 50%; }
+
+#nav-icon.open span:nth-child(2) {
+  transform: rotate(45deg); }
+
+#nav-icon.open span:nth-child(3) {
+  transform: rotate(-45deg); }
+
+#nav-icon.open span:nth-child(4) {
+  top: 32px;
+  width: 0%;
+  left: 50%; }
+
+.hero {
+  position: relative;
+  height: calc(100vh - 66px);
+  background-color: #000;
+  background-image: url(../assets/hero-background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; }
+  .hero .singer img {
+    position: absolute;
+    float: left;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 95%;
+    margin: 0 2.5%; }
+  .hero .singer img:nth-child(2) {
+    display: none; }
+  .hero h2 {
+    position: absolute;
+    text-align: center;
+    width: auto;
+    top: 5%;
+    left: 0;
+    margin: 0 calc((100vw - 250px)/2);
+    font-size: 4em; }
+    .hero h2 #blue {
+      color: #52C6D8; }
+  .hero p {
+    position: absolute;
+    font-size: 1.8em;
+    top: 30%;
+    left: 0;
+    width: 60%;
+    margin: 0 20%; }
+  .hero a {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: auto;
+    margin: 0 calc((100vw - 114px)/2); }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 414px) and (orientation: portrait) {
+  .hero h2 {
+    font-size: 4.8em;
+    margin: 0 calc((100vw - 300px)/2); }
+  .hero p {
+    font-size: 2.0em; } }
+
+@media only screen and (min-width: 700px) {
+  .hero h2 {
+    font-size: 7.8em;
+    margin: 0 calc((100vw - 500px)/2); }
+  .hero p {
+    top: 35%;
+    font-size: 3.2em; }
+  .hero a {
+    margin: 0 calc((100vw - 200px)/2); } }
+
+.drinks {
+  background: url(../assets/drinks-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -300px center;
+  padding-bottom: 6em; }
+  .drinks h2 {
+    width: 70%;
+    padding-top: 1em;
+    padding-bottom: 0.5em; }
+  .drinks p {
+    width: 50%;
+    padding-bottom: 2em; }
+
+@media only screen and (min-width: 320px) and (max-height: 568px) and (orientation: portrait) {
+  .drinks {
+    background-position: -380px center; }
+    .drinks h2 {
+      width: 80%; }
+    .drinks p {
+      width: 60%; } }
+
+@media only screen and (min-width: 375px) and (max-height: 667px) and (orientation: portrait) {
+  .drinks {
+    background-position: -320px center; } }
+
+@media only screen and (min-width: 469px) {
+  .drinks {
+    background-position: right center; } }
+
+@media only screen and (min-width: 700px) {
+  .drinks h2 {
+    width: 60%;
+    font-size: 4.8em; }
+  .drinks p {
+    font-size: 2.4em; } }
+
+.event {
+  background: url(../assets/star.svg);
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: 90px auto;
+  background-position: right -1em top 4.5em;
+  text-align: center;
+  padding-bottom: 6em; }
+  .event h2 {
+    padding-top: 1em; }
+  .event p {
+    font-size: 1.8em;
+    padding: 1.5em 2em 0 2em; }
+  .event p:nth-child(3) {
+    color: #FCF875;
+    padding-bottom: 1.5em; }
+  .event a {
+    padding-top: 1em; }
+
+.songs {
+  background-color: #000;
+  background-image: url(../assets/hero-background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 6em;
+  text-align: center; }
+  .songs h2 {
+    padding-top: 1em; }
+  .songs p {
+    font-size: 1.8em;
+    padding: 1.5em 1em; }
+
+.hours {
+  background-color: #000;
+  text-align: center;
+  padding-bottom: 6em; }
+  .hours h2 {
+    color: #EB008B;
+    padding-top: 1em; }
+  .hours p {
+    padding: 1.5em 1em; }
+  .hours img {
+    width: 90px;
+    height: auto; }
+  .hours .table {
+    padding-top: 2em;
+    display: block;
+    width: 90%;
+    margin: 0 5%; }
+    .hours .table > table {
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid #fff; }
+      .hours .table > table thead {
+        border-bottom: 1px solid #fff; }
+        .hours .table > table thead th {
+          padding-bottom: .5em; }
+      .hours .table > table td {
+        padding: .5em .25em; }
+
+.location {
+  background: url(../assets/gray-overlay-background.svg), url(../assets/rock-box.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center left;
+  background-size: cover, cover;
+  padding-bottom: 6em; }
+  .location h2 {
+    width: 70%;
+    padding: 1em 0; }
+  .location p {
+    width: 80%;
+    padding-bottom: 1.4em; }
+
+footer {
+  background-color: #4D4D4D; }
+  footer .footer-blocks {
+    width: 180px;
+    padding-top: 3em; }
+    footer .footer-blocks a {
+      border: none; }
+    footer .footer-blocks p {
+      padding-top: 0.5em;
+      font-size: 1.2em; }
+  footer .footer-blocks:last-child {
+    padding-bottom: 6em; }

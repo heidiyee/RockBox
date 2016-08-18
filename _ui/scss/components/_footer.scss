@@ -1,0 +1,23 @@
+footer {
+    background-color: $gray-background;
+
+    .footer-blocks {
+        //display: inline-block;
+        width: 180px;
+        padding-top: 3em;
+
+
+        a {
+            border: none;
+        }
+
+        p {
+            padding-top: 0.5em;
+            font-size: 1.2em;
+        }
+    }
+
+    .footer-blocks:last-child {
+        padding-bottom: 6em;
+    }
+}
