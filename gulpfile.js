@@ -22,7 +22,7 @@ return gulp.src('_ui/scss/**/*.scss')
     .pipe(plumber({errorHandler: onError}))
     .pipe(sass())
     .pipe(autoprefixer({
-        browsers: browsers: ['last 2 version', 'safari 5', 'ie6', 'ie7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'],
+        browsers: ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'],
         cascade: false
     }))
     .pipe(gulp.dest('_ui/css/'))

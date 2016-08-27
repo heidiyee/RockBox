@@ -1,0 +1,99 @@
+.book-a-box {
+    background-color: #000;
+    background-image: url(../assets/hero-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    h2 {
+        width: 60%;
+        font-size: 4.0em;
+        color: $yellow;
+        padding: 0.5em 0;
+    }
+
+    p {
+        width: 70%;
+        padding-bottom: 2em;
+    }
+
+    .singer {
+        img {
+            height: 80%;
+            float: right;
+            right: 0;
+            width: auto;
+            left: auto;
+            top: 10%;
+        }
+
+        img:first-child {
+            display: none;
+        }
+
+        img:last-child {
+            display: inherit;
+        }
+    }
+}
+
+@media only screen
+and (max-width: $iphone4-width) and (orientation : portrait) {
+    .book-a-box {
+        .singer img {
+            height: 40%;
+            width: 30%;
+        }
+    }
+}
+
+@media only screen
+and (min-width: $iphone5-width)
+and (max-width: $iphone6plus-width) and (orientation : portrait) {
+    .book-a-box {
+        .singer img {
+            height: 60%;
+            width: 30%;
+        }
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .book-a-box {
+        h2 {
+            font-size: 6.0em;
+        }
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .book-a-box {
+        height: 100%;
+        width: 100%;
+
+        h2 {
+            padding-left: 30px;
+        }
+
+        p {
+            width: 40%;
+            padding-left: 30px;
+        }
+
+        .singer {
+            img {
+                right: 10%;
+                top: auto;
+                height: 100%;
+                display: inherit;
+            }
+
+            img:first-child {
+                display: inherit;
+            }
+            img:last-child {
+                content:url(../assets/book-room.svg);
+            }
+        }
+    }
+}

@@ -17,4 +17,36 @@
         width: 80%;
         padding-bottom: 1.4em;
     }
+
+
+}
+
+
+@media only screen and (min-width: 445px) {
+    .location {
+        h2 {
+            width: 400px;
+        }
+
+        p {
+            width: 300px;
+        }
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .location {
+        h2, p, a {
+            margin-left: 5%;
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .location {
+        h2, p, a {
+            margin-left: calc(((100vw - 50px) - (180px * 4))/8);
+
+        }
+    }
 }

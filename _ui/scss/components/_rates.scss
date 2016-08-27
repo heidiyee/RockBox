@@ -1,0 +1,195 @@
+.rates {
+    background-color: #000;
+    text-align: center;
+    padding-bottom: 5em;
+
+    h2 {
+        padding: 1em 0;
+    }
+
+    p {
+        padding-bottom: 1em;
+    }
+
+    h3 {
+        font-size: 2.0em;
+        padding: 1em 0 0;
+        border: none;
+    }
+
+    .yellow {
+        color: $yellow;
+    }
+
+    .pink {
+        color: $hot-pink;
+    }
+
+    .regular-table {
+        border: 5px solid $yellow;
+        margin: 0 5% 3em;
+
+        table {
+            width: 100%;
+            table-layout: fixed;
+            font-size: 1.8em;
+
+            thead tr {
+                th {
+                    padding: 1em 0;
+                    border-right: 5px solid $yellow;
+                }
+
+                th:last-child {
+                    padding-bottom: 1em;
+                    border-right: none;
+                }
+            }
+            tbody tr {
+
+                td {
+                    padding: 0 1em;
+                    border-right: 5px solid $yellow;
+                }
+
+                .dollar {
+                    font-size: 2.0em;
+                }
+
+                td:last-child {
+                    padding-bottom: 1em;
+                    border-right: none;
+                }
+            }
+        }
+
+    }
+
+    .party-table {
+        border: 5px solid $hot-pink;
+        margin: 0 5%;
+
+        table  {
+            width: 100%;
+
+            thead tr {
+                border-bottom: 5px solid $hot-pink;
+
+                th {
+                    vertical-align: middle;
+                    padding: 0.25em 1em;
+                    border-right: 5px solid $hot-pink;
+
+                }
+
+                th:last-child {
+                    border-right: none;
+                }
+            }
+
+             tbody {
+
+                th {
+                    vertical-align: middle;
+                    padding: 1em 1em;
+                    border-right: 5px solid $hot-pink;
+
+                }
+
+                th:last-child {
+                    padding-bottom: 1em;
+                    border-right: none;
+                }
+
+                tr {
+                    vertical-align: middle;
+                    padding: 1em 0;
+                }
+
+                tr:nth-child(2n+1) {
+                    border-bottom: 5px solid $hot-pink;
+                }
+
+                tr:last-child {
+                    border-bottom: none;
+                }
+
+                .dotted {
+                    vertical-align: middle;
+                    padding: 1em 0;
+                    border-bottom: 2px dotted $hot-pink;
+                }
+
+                td {
+                    vertical-align: middle;
+                    padding: 0 1em;
+                    border-right: 5px solid $hot-pink;
+                }
+
+                td:last-child {
+                    padding: 1em 0;
+                    border-right: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $iphone5-width) {
+    .rates {
+        .regular-table {
+            table {
+                font-size: 1.2em;
+            }
+        }
+
+        .party-table {
+            table {
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $iphone6plus-width) {
+    .rates {
+        p:nth-child(2){
+            margin: 0;
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: $iphone5-width) and (max-width: 457px) {
+    .rates {
+        .regular-table {
+            table {
+                font-size: 1.4em;
+            }
+        }
+
+        .party-table {
+            table {
+                font-size: 1.4em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $iphone6plus-width) {
+    .rates {
+        p {
+            width: 80%;
+            margin: 0 10%;
+        }
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .rates {
+        p {
+            width: 60%;
+            margin: 0 20%;
+        }
+    }
+}

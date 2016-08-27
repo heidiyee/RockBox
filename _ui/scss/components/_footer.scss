@@ -8,6 +8,7 @@ footer {
 
 
         a {
+            font-size: 1.8em;
             border: none;
         }
 
@@ -15,9 +16,35 @@ footer {
             padding-top: 0.5em;
             font-size: 1.2em;
         }
-    }
 
-    .footer-blocks:last-child {
-        padding-bottom: 6em;
+        ul {
+            li {
+                font-size: 2.8em;
+                display: inline-block;
+                padding: 0 .2em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    footer {
+        .footer-blocks {
+            vertical-align: top;
+            display: inline-block;
+            margin: 0 calc(((100vw - 58px) - (180px * 2))/4);
+
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    footer {
+        .footer-blocks {
+            vertical-align: top;
+            display: inline-block;
+            margin: 0 calc(((100vw - 64px) - (180px * 4))/8);
+
+        }
     }
 }

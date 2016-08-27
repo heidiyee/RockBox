@@ -25,3 +25,14 @@
         padding-top: 1em;
     }
 }
+
+@media only screen and (min-width: 800px) {
+    .event {
+        background-size: 150px auto;
+
+        p {
+            width: 65%;
+            margin: 0 17.5%;
+        }
+    }
+}

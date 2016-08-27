@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>Rock Box</title>
+
+        <!--build:css css/styles.min.css-->
+        <link rel="stylesheet" href="_ui/css/main.css">
+        <!--endbuild-->
+
+    </head>
+    <body>
+        <nav>
+            <div class="nav-bar">
+                <h1><a href="index.html"><img src="_ui/assets/rockbox-logo.svg" alt="Rock Box Home" /></a></h1>
+
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="bookabox.html">BOOK A BOX</a></li>
+                        <li>PLAN AN EVENT</li>
+                        <li>SONGS</li>
+                        <li>MENU</li>
+                        <li>GALLERY</li>
+                        <li>ABOUT</li>
+                    </ul>
+                </div>
+
+                <div id="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+
+            </div>
+
+
+        </nav>
+        <main role="main">
+            <section class="book-a-box">
+                <div class="singer">
+                    <img src="_ui/assets/singer-wine.png" alt="" />
+                    <img src="_ui/assets/book-room-mobile.svg" alt="" />
+                </div>
+                <h2>HOW TO<br>BOOK<br>A BOX</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Fusce tincidunt, ipsum at laoreet luctus, orci dolor pel lentesque sem, sed tempor purus
+                </p>
+            </section>
+
+            <section class="rooms">
+                <h2>ROOM SIZES</h2>
+                <p>
+                    We have 12 rooms that range in size. Our largest, the party room accomodates up to 50 people, while the next largest seats a max of 15.
+                </p>
+            </section>
+
+            <section class="rates">
+                <h2>Room Rates</h2>
+                <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, ipsum at laoreet luctus, orci dolor pellentesque sem, sed tempor purus risus faucibus
+                </p>
+
+                <h3 class="yellow">REGULAR ROOMS</h3>
+                <p>
+                    FOR 1 TO 15 PEOPLE
+                </p>
+                <div class="regular-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>REGULAR HOURS</th>
+                                <th>HAPPY HOUR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="dollar">$7</span><BR>PER PERSON / PER HOUR</td>
+                                <td><span class="dollar">$4</span><BR>PER PERSON / PER HOUR</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <h3 class="pink">PARTY ROOM</h3>
+                <p>
+                    FOR GROUPS OF 16 PEOPLE OR MORE
+                </p>
+                <div class="party-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>DAYS</th>
+                                <th>FIRST 2 HOURS</th>
+                                <th>EACH ADDITIONAL HOUR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>SUN-WED</td>
+                                <td>$125 / HOUR <br>(ALL DAY)</td>
+                                <td>$100/ HOUR</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2">THURS</td>
+                                <td class="dotted">$125 / HOUR<br> (BEFORE 8 PM) </td>
+                                <td rowspan="2">$125 / HOUR</td>
+                            </tr>
+                            <tr>
+                                <td>$175 / HOUR <br>(AFTER 8 PM)</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2">FRI-SAT</td>
+                                <td class="dotted">$125 / HOUR <br>(BEFORE 7 PM) </td>
+                                <td rowspan="2">$125 / HOUR</td>
+                            </tr>
+                            <tr>
+                                <td>$175 / HOUR<br>(AFTER 7 PM)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="request">
+                <h2>BOOK YOUR ROOM<BR>REQUEST FORM</h2>
+                <p> Fill out this form, or call us at XXX.XXX.XXXX. Please call if you're looking to visit within the next 24 hours to be sure that we can get you in.<br><br>Our staff must confirm all reservations with you, so please note that a reservation isn't complete until you've heard from us. Our goal is to complete every reservation within 24 hours.
+                </p>
+
+                <form class="request-form" action="index.html" method="post">
+                    <div class="request-block">
+                        <label for="first-name">NAME</label>
+                        <input class="text-box" type="text" name="first-name" placeholder="first and last">
+                        <!-- <input type="text" name="last-name" placeholder="last"> -->
+                    </div>
+                    <div class="request-block">
+                        <label for="number">PHONE</label>
+                        <input class="text-box" type="tel" name="number" placeholder="###-###-####">
+                    </div>
+                    <div class="request-block">
+                        <label for="email">EMAIL</label>
+                        <input class="text-box" type="email" name="email" placeholder="superstar@email.com">
+                    </div>
+                    <div class="request-block">
+                        <label for="date">DATE</label>
+                        <input class="text-box" type="date" name="date" placeholder="mm/dd/yy">
+                    </div>
+                    <div class="request-block">
+                        <label for="start-time">PREFERRED <br>START TIME</label>
+                        <input class="text-box" type="time" name="start-time" placeholder="7:30 pm">
+                    </div>
+                    <div class="request-block">
+                        <label for="party-length">ESTIMATED <br>PARTY LENGTH</label>
+                        <input class="text-box" type="number" name="party-length" placeholder="How many hours?">
+                    </div>
+                    <div class="request-block">
+                        <label for="number-of-guest">NUMBER OF <br>GUESTS</label>
+                        <input class="text-box" type="number" name="number-of-guests" placeholder="How many people?">
+                    </div>
+                    <div class="request-block">
+                        <label for="location">CHOOSE YOUR LOCATION</label>
+                        <input type="radio" name="location" value="CAPITOL HILL">CAPITOL HILL
+                        <input type="radio" name="location" value="BELLEVUE">BELLEVUE
+                    </div>
+                    <div class="submit">
+                        <input type="submit" name="submit" value="SUBMIT REQUEST">
+                    </div>
+                </form>
+            </section>
+
+            <section class="faq">
+                <h2>FAQ, POLICIES, Q&A</h2>
+                <div class="all-the-faq">
+                    <div class="faq-block">
+                        <h3>POLICIES</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate urna sit amet lorem eleifend, ultricies sagittis diam laoreet. Nullam ullamcorper ut ante ac fringilla. In porta, mauris quis tincidunt mattis, risus tellus blandit mauris, et gravida tellus
+                        </p>
+                    </div>
+                    <div class="faq-block">
+                        <h3>CANCELATIONS</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate urna sit amet lorem eleifend, ultricies sagittis diam laoreet. Nullam ullamcorper ut ante ac fringilla. In porta, mauris quis tincidunt mattis, risus tellus blandit mauris, et gravida tellus
+                        </p>
+                    </div>
+                    <div class="faq-block">
+                        <h3>FAQ 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate urna sit amet lorem eleifend, ultricies sagittis diam laoreet. Nullam ullamcorper ut ante ac fringilla. In porta, mauris quis tincidunt mattis, risus tellus blandit mauris, et gravida tellus
+                        </p>
+                    </div>
+                    <div class="faq-block">
+                        <h3>FAQ 2</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate urna sit amet lorem eleifend, ultricies sagittis diam laoreet. Nullam ullamcorper ut ante ac fringilla. In porta, mauris quis tincidunt mattis, risus tellus blandit mauris, et gravida tellus
+                        </p>
+                    </div>
+                    <div class="faq-block">
+                        <h3>FAQ 3</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate urna sit amet lorem eleifend, ultricies sagittis diam laoreet. Nullam ullamcorper ut ante ac fringilla. In porta, mauris quis tincidunt mattis, risus tellus blandit mauris, et gravida tellus
+                        </p>
+                    </div>
+                    <div class="faq-block">
+                        <h3>FAQ 4</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate urna sit amet lorem eleifend, ultricies sagittis diam laoreet. Nullam ullamcorper ut ante ac fringilla. In porta, mauris quis tincidunt mattis, risus tellus blandit mauris, et gravida tellus
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-blocks">
+                <h3>LOCATION</h3>
+                <p>
+                    1603 NAGLE PLACES <br>SEATTLE 1/2 BLOCK EAST OF <br>BROADWAY ON PINE IN <br>CAPITOL HILL
+                </p>
+            </div>
+            <div class="footer-blocks">
+                <h3>HOURS</h3>
+                <p>
+                    SUN-WED 4 PM - 2AM <br>THURS 4 PM - 3AM<br>FRI - SAT 4 PM - 4 AM
+                </p>
+            </div>
+            <div class="footer-blocks">
+                <h3>CONTACT</h3>
+                <p>
+                    <a href="tel:206-302-7625">206. 302. 7625</a><br>
+                    SGENERAL MANAGER: MONTE CLARK<br> MONTE@ROCKBOXSEATTLE.COM
+                </p>
+            </div>
+            <div class="footer-blocks">
+                <h3>CONNECT</h3>
+                <p>
+                    <ul>
+                        <li class="icon-twitter-icon"></li>
+                        <li class="icon-facebook-icon"></li>
+                        <li class="icon-ig-icon"></li>
+                    </ul>
+                </p>
+            </div>
+
+
+        </footer>
+
+        <!--build:js js/main.min.js -->
+        <script src="_ui/js/jquery-3.0.0.min.js"></script>
+        <script src="_ui/js/menu.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

@@ -8,29 +8,48 @@
         <!--build:css css/styles.min.css-->
         <link rel="stylesheet" href="_ui/css/main.css">
         <!--endbuild-->
+
     </head>
     <body>
         <nav>
-            <h1><img src="_ui/assets/rockbox-logo.svg" alt="" /></h1>
-            <div id="nav-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="nav-bar">
+                <h1><a href="index.html"><img src="_ui/assets/rockbox-logo.svg" alt="Rock Box Home" /></a></h1>
+
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="bookabox.html">BOOK A BOX</a></li>
+                        <li>PLAN AN EVENT</li>
+                        <li>SONGS</li>
+                        <li>MENU</li>
+                        <li>GALLERY</li>
+                        <li>ABOUT</li>
+                    </ul>
+                </div>
+
+                <div id="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+
             </div>
+
+
         </nav>
         <main role="main">
             <section class="hero">
                 <div class="singer">
-                    <img src="_ui/assets/cute-icons-mobile.svg" alt="" />
+                    <img class="cute-icons" src="_ui/assets/cute-icons-mobile.svg" alt="" />
                     <img src="_ui/assets/man-singing.png" alt="" />
                 </div>
-                <h2>flow like it's <span id="blue">tokyo</span></h2>
+                <h2>flow like it's <span class="blue">tokyo</span></h2>
 
                 <p>
                     There's a different kind of Karaoke happening in Seattle. Eleven private Japanese-style Karaoke box rooms. A full bar. You and your friends, rocking the box your way.
                 </p>
-                <a href="#">BOOK A BOX</a>
+                <a href="bookabox.html">BOOK A BOX</a>
             </section>
 
             <section class="drinks">
@@ -53,6 +72,11 @@
             </section>
 
             <section class="songs">
+                <div class="female-singer">
+                    <img src="_ui/assets/girl-singer.png" alt="" />
+                    <img src="_ui/assets/small-stars-glasses.svg" alt="" />
+                </div>
+
                 <h2>check out our songs</h2>
                 <p>
                     You don't have to be a Karaoke veteran to rock the mic. We have thousands of tracks in more than a dozen languages, including all the faves. Find yours now or in the box!
@@ -132,7 +156,11 @@
             <div class="footer-blocks">
                 <h3>CONNECT</h3>
                 <p>
-                    icons
+                    <ul>
+                        <li class="icon-twitter-icon"></li>
+                        <li class="icon-facebook-icon"></li>
+                        <li class="icon-ig-icon"></li>
+                    </ul>
                 </p>
             </div>
 

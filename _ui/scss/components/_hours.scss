@@ -46,9 +46,18 @@
     }
 }
 
-// @media only screen and (min-width : $iphone4-width)
-// and (max-width : $iphone5-width) and (orientation: portrait) {
-//     .hours {
-//         background-position: center bottom 34em;
-//     }
-// }
+
+@media only screen and (min-width: 800px) {
+    .hours {
+        img {
+            position: absolute;
+            left: -1em;
+            width: 150px;
+        }
+
+        p, .table {
+            width: 65%;
+            margin: 0 17.5%;
+        }
+    }
+}

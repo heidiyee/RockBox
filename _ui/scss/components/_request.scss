@@ -1,0 +1,142 @@
+.request {
+    background-color: $gray-background;
+
+    h2 {
+        text-align: center;
+        padding: 1em 0;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .request-form {
+        width: 100%;
+        padding: 3em 0;
+        font-size: 1.6em;
+
+        .request-block {
+            display: inline-block;
+            padding-bottom: 1em;
+            width: 132px;
+
+            label {
+                display: block;
+            }
+            input.text-box {
+                width: 125px;
+            }
+
+            input.radio-button {
+                padding-left: 1em;
+            }
+
+        }
+        .submit {
+            display: block;
+            margin-top: 1em;
+
+            input[type="submit"] {
+                padding: 0 0 0.5em;
+                color: #fff;
+                font-size: 1.0em;
+                background: none;
+                border: none;
+                border-radius: 0;
+                border-bottom: 5px solid $light-blue;
+
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: $iphone6plus-width) {
+    .request {
+        p {
+            width: 80%;
+            margin: 0 10%;
+        }
+    }
+}
+
+@media only screen
+and (max-width: 399px) and (orientation : portrait) {
+    .request {
+        .request-form  {
+            .request-block {
+                display: block;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .request {
+        .request-form {
+            .request-block {
+                margin: 0 calc((100% - 6px - (2 * 132px))/4);
+            }
+
+            .submit {
+                margin-left: calc((100% - 6px - (2 * 132px))/4);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .request {
+        .request-form {
+            .request-block {
+                margin: 0 calc((100% - 10px - (3 * 132px))/6);
+            }
+
+            .submit {
+                margin-left: calc((100% - 10px - (3 * 132px))/6);
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 750px) {
+    .request {
+        .request-form {
+            .request-block {
+                margin: 0 calc((100% - 14px - (4 * 132px))/8);
+            }
+
+            .submit {
+                margin-left: calc((100% - 14px - (4 * 132px))/8);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .request {
+        .request-form {
+            width: 744px;
+            margin: 0 calc((100% - 744px)/2);
+            .request-block {
+                margin: 0 25.25px;
+            }
+
+            .submit {
+                margin-left: 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .request {
+        p {
+            width: 60%;
+            margin: 0 20%;
+        }
+    }
+}

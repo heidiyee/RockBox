@@ -1,0 +1,53 @@
+.faq {
+    background-color: #000;
+    padding-bottom: 3em;
+
+    h2 {
+        padding: 1em 0;
+        text-align: center;
+        color: $hot-pink;
+    }
+
+    .all-the-faq {
+        width: 100%;
+        .faq-block {
+            padding-bottom: 3em;
+
+            h3 {
+                font-size: 1.8em;
+                padding: 0;
+                border: none;
+            }
+
+            p {
+                font-size: 1.6em;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 550px) {
+    .faq {
+        .faq-block {
+            display: inline-block;
+            width: 40%;
+            margin: 0 4.8%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1125px) {
+    .faq {
+        .all-the-faq {
+            width: 1128px;
+            margin: 0 calc((100% - 1128px)/2);
+            .faq-block {
+                display: inline-block;
+                width: 450px;
+                 margin: 0 54px;
+            }
+        }
+
+    }
+}
