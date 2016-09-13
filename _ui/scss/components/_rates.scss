@@ -32,7 +32,7 @@
         table {
             width: 100%;
             table-layout: fixed;
-            font-size: 1.8em;
+            font-size: 1.2em;
 
             thead tr {
                 th {
@@ -71,6 +71,7 @@
 
         table  {
             width: 100%;
+            font-size: 1.0em;
 
             thead tr {
                 border-bottom: 5px solid $hot-pink;
@@ -135,7 +136,8 @@
     }
 }
 
-@media only screen and (max-width: $iphone5-width) {
+
+@media only screen and (min-width: 315px) {
     .rates {
         .regular-table {
             table {
@@ -151,7 +153,39 @@
     }
 }
 
-@media only screen and (max-width: $iphone6plus-width) {
+@media only screen and (min-width: 400px) {
+    .rates {
+        .regular-table {
+            table {
+                font-size: 1.4em;
+            }
+        }
+
+        .party-table {
+            table {
+                font-size: 1.4em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .rates {
+        .regular-table {
+            table {
+                font-size: 1.8em;
+            }
+        }
+
+        .party-table {
+            table {
+                font-size: 1.8em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $iphone6plus-width) {
     .rates {
         p:nth-child(2){
             margin: 0;
@@ -160,21 +194,6 @@
     }
 }
 
-@media only screen and (min-width: $iphone5-width) and (max-width: 457px) {
-    .rates {
-        .regular-table {
-            table {
-                font-size: 1.4em;
-            }
-        }
-
-        .party-table {
-            table {
-                font-size: 1.4em;
-            }
-        }
-    }
-}
 
 @media only screen and (min-width: $iphone6plus-width) {
     .rates {

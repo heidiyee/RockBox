@@ -308,6 +308,10 @@ nav .nav-bar {
   .hero p {
     top: 28%; } }
 
+@media only screen and (max-height: 600px) {
+  .hero {
+    height: 600px; } }
+
 @media only screen and (min-width: 700px) {
   .hero h2 {
     font-size: 7.3em;
@@ -680,7 +684,7 @@ footer {
     .rates .regular-table table {
       width: 100%;
       table-layout: fixed;
-      font-size: 1.8em; }
+      font-size: 1.2em; }
       .rates .regular-table table thead tr th {
         padding: 1em 0;
         border-right: 5px solid #FCF875; }
@@ -699,7 +703,8 @@ footer {
     border: 5px solid #EB008B;
     margin: 0 5%; }
     .rates .party-table table {
-      width: 100%; }
+      width: 100%;
+      font-size: 1.0em; }
       .rates .party-table table thead tr {
         border-bottom: 5px solid #EB008B; }
         .rates .party-table table thead tr th {
@@ -734,22 +739,28 @@ footer {
         padding: 1em 0;
         border-right: none; }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 315px) {
   .rates .regular-table table {
     font-size: 1.2em; }
   .rates .party-table table {
     font-size: 1.2em; } }
 
-@media only screen and (max-width: 414px) {
-  .rates p:nth-child(2) {
-    margin: 0;
-    width: 100%; } }
-
-@media only screen and (min-width: 320px) and (max-width: 457px) {
+@media only screen and (min-width: 400px) {
   .rates .regular-table table {
     font-size: 1.4em; }
   .rates .party-table table {
     font-size: 1.4em; } }
+
+@media only screen and (min-width: 500px) {
+  .rates .regular-table table {
+    font-size: 1.8em; }
+  .rates .party-table table {
+    font-size: 1.8em; } }
+
+@media only screen and (min-width: 414px) {
+  .rates p:nth-child(2) {
+    margin: 0;
+    width: 100%; } }
 
 @media only screen and (min-width: 414px) {
   .rates p {

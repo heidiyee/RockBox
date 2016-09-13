@@ -1,7 +1,7 @@
 .hero {
     position: relative;
     height: calc(100vh - 66px);
-    // height: 100%;
+    // height: 600px;
     background-color: #000;
     background-image:
         url(../assets/hero-background.svg);
@@ -85,6 +85,14 @@ and (min-device-height: $iphone4-height) and (orientation : portrait) {
         }
     }
 }
+
+// min height for hero only
+@media only screen and (max-height: 600px) {
+    .hero {
+        height: 600px;
+    }
+}
+
 
 @media only screen and (min-width: 700px) {
     .hero {
