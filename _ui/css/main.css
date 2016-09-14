@@ -276,8 +276,8 @@ nav .nav-bar {
     top: 70%;
     left: 0;
     width: auto;
-    margin: 0 -webkit-calc((100vw - 114px)/2);
-    margin: 0 calc((100vw - 114px)/2); }
+    margin: 0 -webkit-calc((100% - 115px)/2);
+    margin: 0 calc((100% - 115px)/2); }
 
 .singer img {
   position: absolute;
@@ -296,6 +296,12 @@ nav .nav-bar {
 .blue {
   color: #52c6d8; }
 
+@media only screen and (min-device-width: 320px) and (min-device-height: 480px) {
+  .hero p {
+    top: 25%; }
+  .hero a {
+    top: 60%; } }
+
 @media only screen and (min-device-width: 375px) and (max-device-width: 414px) and (orientation: portrait) {
   .hero h2 {
     font-size: 4.8em;
@@ -303,10 +309,6 @@ nav .nav-bar {
     margin: 0 calc((100vw - 300px)/2); }
   .hero p {
     font-size: 2.0em; } }
-
-@media only screen and (min-device-width: 320px) and (min-device-height: 480px) and (orientation: portrait) {
-  .hero p {
-    top: 28%; } }
 
 @media only screen and (max-height: 600px) {
   .hero {
@@ -323,6 +325,7 @@ nav .nav-bar {
     width: 50%;
     margin: 0 25%; }
   .hero a {
+    top: 75%;
     font-size: 2.8em;
     margin: 0 -webkit-calc((100vw - 200px)/2);
     margin: 0 calc((100vw - 200px)/2); } }
@@ -352,8 +355,6 @@ nav .nav-bar {
     margin-left: 30px;
     -webkit-transition: .25s ease-in;
     transition: .25s ease-in; }
-  .singer .cute-icons {
-    content: url(../assets/cute-icons.svg); }
   .singer img {
     float: right;
     width: auto;
@@ -569,15 +570,15 @@ footer {
   footer .footer-blocks {
     vertical-align: top;
     display: inline-block;
-    margin: 0 -webkit-calc(((100vw - 58px) - (180px * 2))/4);
-    margin: 0 calc(((100vw - 58px) - (180px * 2))/4); } }
+    margin: 0 -webkit-calc(((100% - (184px * 2))/4));
+    margin: 0 calc(((100% - (184px * 2))/4)); } }
 
 @media only screen and (min-width: 800px) {
   footer .footer-blocks {
     vertical-align: top;
     display: inline-block;
-    margin: 0 -webkit-calc(((100vw - 64px) - (180px * 4))/8);
-    margin: 0 calc(((100vw - 64px) - (180px * 4))/8); } }
+    margin: 0 -webkit-calc(((100% - (184px * 4))/8));
+    margin: 0 calc(((100% - (184px * 4))/8)); } }
 
 .book-a-box {
   background-color: #000;
@@ -634,9 +635,7 @@ footer {
       height: 100%;
       display: inherit; }
     .book-a-box .singer img:first-child {
-      display: inherit; }
-    .book-a-box .singer img:last-child {
-      content: url(../assets/book-room.svg); } }
+      display: inherit; } }
 
 .rooms {
   background: url(../assets/room-background.jpg);
@@ -735,8 +734,9 @@ footer {
         vertical-align: middle;
         padding: 0 1em;
         border-right: 5px solid #EB008B; }
-      .rates .party-table table tbody td:last-child {
-        padding: 1em 0;
+        .rates .party-table table tbody td:last-child {
+          padding: 1em 0; }
+      .rates .party-table table tbody .right-border {
         border-right: none; }
 
 @media only screen and (min-width: 315px) {

@@ -125,10 +125,13 @@
                     vertical-align: middle;
                     padding: 0 1em;
                     border-right: 5px solid $hot-pink;
+
+                    &:last-child {
+                        padding: 1em 0;
+                    }
                 }
 
-                td:last-child {
-                    padding: 1em 0;
+                .right-border {
                     border-right: none;
                 }
             }

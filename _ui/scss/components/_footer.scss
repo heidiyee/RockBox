@@ -32,8 +32,7 @@ footer {
         .footer-blocks {
             vertical-align: top;
             display: inline-block;
-            margin: 0 calc(((100vw - 58px) - (180px * 2))/4);
-
+            margin: 0 calc(((100% - (184px * 2))/4);
         }
     }
 }
@@ -43,7 +42,7 @@ footer {
         .footer-blocks {
             vertical-align: top;
             display: inline-block;
-            margin: 0 calc(((100vw - 64px) - (180px * 4))/8);
+            margin: 0 calc(((100% - (184px * 4))/8);
 
         }
     }

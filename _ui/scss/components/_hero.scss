@@ -35,7 +35,7 @@
         top: 70%;
         left: 0;
         width: auto;
-        margin: 0 calc((100vw - 114px)/2);
+        margin: 0 calc((100% - 115px)/2);
     }
 
 }
@@ -62,6 +62,20 @@
 }
 
 @media only screen
+and (min-device-width: $iphone4-width)
+and (min-device-height: $iphone4-height) {
+    .hero {
+        p {
+            top: 25%;
+        }
+
+        a {
+            top: 60%;
+        }
+    }
+}
+
+@media only screen
 and (min-device-width: $iphone6-width)
 and (max-device-width: $iphone6plus-width) and (orientation : portrait) {
     .hero {
@@ -76,17 +90,7 @@ and (max-device-width: $iphone6plus-width) and (orientation : portrait) {
     }
 }
 
-@media only screen
-and (min-device-width: $iphone4-width)
-and (min-device-height: $iphone4-height) and (orientation : portrait) {
-    .hero {
-        p {
-            top: 28%;
-        }
-    }
-}
-
-// min height for hero only
+// min height for desktop mode
 @media only screen and (max-height: 600px) {
     .hero {
         height: 600px;
@@ -109,6 +113,7 @@ and (min-device-height: $iphone4-height) and (orientation : portrait) {
         }
 
         a {
+            top: 75%;
             font-size: 2.8em;
             margin: 0 calc((100vw - 200px)/2)
         }
@@ -144,12 +149,8 @@ and (min-device-height: $iphone4-height) and (orientation : portrait) {
             margin-left: 30px;
             transition: .25s ease-in;
         }
-
     }
 
-    .singer .cute-icons {
-        content:url(../assets/cute-icons.svg);
-    }
 
     .singer img {
         float: right;

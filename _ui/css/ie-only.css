@@ -1,0 +1,4 @@
+/* ie 9 and lower */
+.hero {
+    background: #000 url("../assets/hero-background.svg");
+}

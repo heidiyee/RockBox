@@ -91,9 +91,9 @@ and (max-width: $iphone6plus-width) and (orientation : portrait) {
             img:first-child {
                 display: inherit;
             }
-            img:last-child {
-                content:url(../assets/book-room.svg);
-            }
+            // img:last-child {
+            //     content:url(../assets/book-room.svg);
+            // }
         }
     }
 }

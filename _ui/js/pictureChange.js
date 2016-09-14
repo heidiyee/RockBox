@@ -1,17 +1,40 @@
 var pictureChange = function() {
 
     var width = $(window).innerWidth();
-    var mediaQuery = window.matchMedia( "(max-width: 500px)" );
-
-    console.log(width);
-    console.log(mediaQuery);
 
     if ($(window).innerWidth() > 960) {
-        console.log("match");
-        $('.cute-icons').attr('src','_ui/assets/cute-icons.svg');
+        if ($('.cute-icons').length) {
+            $('.cute-icons').attr('src','assets/cute-icons.svg');
+        } else if ($('.room-icons').length) {
+            $('.room-icons').attr('src','assets/book-room.svg');
+        }
     } else {
-        $('.cute-icons').attr('src','_ui/assets/cute-icons-mobile.svg');
+        if ($('.cute-icons').length) {
+            $('.cute-icons').attr('src','assets/cute-icons-mobile.svg');
+        } else if ($('.room-icons').length) {
+            $('.room-icons').attr('src','assets/book-room-mobile.svg');
+        }
     }
 };
 
+var resizeChange = function() {
+    $(window).resize(function() {
+        var windowWidth = $(window).width();
+        if (windowWidth > "960") {
+            if ($('.cute-icons').length) {
+                $('.cute-icons').attr('src','assets/cute-icons.svg');
+            } else if ($('.room-icons').length) {
+                $('.room-icons').attr('src','assets/book-room.svg');
+            }
+        } else {
+            if ($('.cute-icons').length) {
+                $('.cute-icons').attr('src','assets/cute-icons-mobile.svg');
+            } else if ($('.room-icons').length) {
+                $('.room-icons').attr('src','assets/book-room-mobile.svg');
+            }
+        }
+    });
+};
+
 $(document).ready(pictureChange);
+$(document).ready(resizeChange);
